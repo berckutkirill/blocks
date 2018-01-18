@@ -1,0 +1,88 @@
+/*whole page*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body.menu_open {
+	height: 100vh;
+	overflow: hidden !important;
+	position: relative;
+}
+body:after {
+	content: '';
+	display: block;
+	height: 130%;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: opacity .3s;
+	visibility: hidden;
+	width: 100%;
+}
+body.menu_open:after {
+	background-color: rgba(0, 0, 0, 0.1);
+	opacity: 1;
+	visibility: visible;
+	z-index: 15;
+}
+
+/*main*/
+.megamenu {
+	/*depends on design*/
+	background-color: #fafafa;
+	border: 1px solid #e8e8e8;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 18px 66px 35px 63px;
+	width: 1240px; 
+
+	/*obligatory*/
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -100%);
+	transition: 0.35s;
+	z-index: 9999;
+}
+.megamenu.open {
+	transform: translate(-50%, 0);
+}
+
+/*controls*/
+.megamenu_show {
+	cursor: pointer;
+}
+.megamenu_hide {
+	cursor: pointer;
+	position: absolute;
+	top: 26px;
+	right: 65px;
+}
+.megamenu_hide g {
+	transition: 0.2s;
+}
+.megamenu_hide:hover g {
+	stroke: #f82d40;
+}
+
+
+
+/*example content*/
+.exampleMenu__list {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	list-style-type: none;
+	max-height: 90px;
+	min-width: 535px;
+}
+.example_content {
+	background-color: #cae;
+	height: 150vh;
+	margin: 50px auto 0;
+	padding: 0 15px;
+	width: 1170px;
+}
