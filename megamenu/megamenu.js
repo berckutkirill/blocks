@@ -25,7 +25,7 @@ function closeMegaMenu() {
 	$('.megamenu').removeClass('open');
 	$('body').removeClass('menu_open');
 	if(document.body.clientHeight > window.innerHeight) {
-		pageScrollGo();
+		setTimeout(function() {pageScrollGo();}, 350)
 	}
 }
 
