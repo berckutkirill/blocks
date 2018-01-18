@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>megamenu</title>
+	<link rel="stylesheet" href="megamenu.css">
+	<script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!-- should be placed in body element -->
+	<div class="megamenu fixed_screen">
+		
+		<!-- close button -->
+		<span class="megamenu_hide js_megamenu_hide">
+			<svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33">
+				<g fill="none" fill-rule="evenodd" stroke="#000" stroke-linecap="round" stroke-width="2">
+					<path d="M1.358 31.35L30.349 2.357M1.358 1.65l28.991 28.992"></path>
+				</g>
+			</svg>
+		</span>	
+		<!-- / close button -->
+
+		<!-- megamenu example content -->
+		<nav>
+			<ul class="exampleMenu__list">    
+				<li class=""><a href="#" class="">Доставка</a></li>
+				<li class=""><a href="#" class="">Оплата</a></li>
+				<li class=""><a href="#" class="">Гарантия</a></li>
+				<li class=""><a href="#" class="">O компании</a></li>
+				<li class=""><a href="#" class="">Отзывы</a></li>
+				<li class=""><a href="#" class="">Контакты</a></li>
+				<li class=""><a href="#" class="">Клиенту</a></li>
+				<li class=""><a href="#" class="">Компаниям</a></li>
+				<li class=""><a href="#" class="">Акции</a></li>
+				<li class=""><a href="#" class="">FAQ</a></li>
+				<li class=""><a href="#" class="">Ремонт</a></li>
+				<li class=""><a href="#" class="">Новости</a></li>
+			</ul>
+		</nav>
+		<!-- / megamenu example content -->
+
+	</div>
+
+	<!-- open button -->
+	<a href="#" class="megamenu_show js_megamenu_show">open MEGAmenu</a>
+	<!-- / open button -->
+
+	<!-- example page content -->
+	<!-- content should have 100% width wrap (here - <section>) -->
+	<section class="example_content_wrap">
+		<div class="example_content">
+			<p>Example content to show that page doesn't move when menu is open</p>
+		</div>
+	</section>
+	
+	<!-- example page content -->
+
+	<script src="megamenu.js"></script>
+</body>
+
+</html>
