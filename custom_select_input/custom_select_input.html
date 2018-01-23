@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Custom select input</title>
+	<link rel="stylesheet" href="custom_select_input.css">
+	<script
+	src="https://code.jquery.com/jquery-1.12.4.min.js"
+	integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+	crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<h1>Custom select input</h1>
+	<div class="example_select_wrap">
+
+		<div class="customSelect js_selectBlock" tabindex="0">
+			<div class="customSelect__indication js_openSelect">
+				<span class="customSelect__indicationValue">Select value below</span>
+				<input type="hidden" name="custom_select_name">
+				<span class="customSelect__indicationArr">&#x25BE;</span>
+			</div>
+
+			<ul class="customSelect__list js_selectList">
+				<li class="customSelect__listItem" data-selectValue="test value1">test item1</li>
+				<li class="customSelect__listItem" data-selectValue="test value2">test item2</li>
+				<li class="customSelect__listItem" data-selectValue="test value3">test item3 long value long value</li>
+				<li class="customSelect__listItem marked" data-selectValue="test value4">test item4</li>
+				<li class="customSelect__listItem" data-selectValue="test value5">test item5</li>
+			</ul>
+		</div>
+		
+	</div>
+
+	<script src="custom_select_input.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slider</title>
+	<link rel="stylesheet" href="slider.css">
+	<script
+	src="https://code.jquery.com/jquery-1.12.4.min.js"
+	integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+	crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<h1>Slider</h1>
+	<div class="example_wrap">
+		<!-- slider -->
+		<div class="slider_wrap cyclical" id="exampleSlider">
+			<div class="slider_content_wrap">
+				<!-- slider content -->
+				<div class="slider_content">
+					<!-- slide item -->
+					<!-- set bg-image to slider_item, if full slide img is needed -->
+					<div class="slider_item" data-slide-title="Name example 1" style="background-image: url();">
+						<div class="slider_item__title">
+							<a href="" class="linkType1">Name example 1</a>
+						</div>
+						<div class="slider_item__text">Description text. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+						<div class="slider_item__priceContainer" data-price-new="100" data-price-old="200">
+							<span class="slider_item__price slider_item__price-new js_price"></span>
+							<span class="slider_item__price slider_item__price-old js_price"></span>
+						</div>
+
+						<div class="slider_item__img">
+							<img src="slider_example_img/test3.jpg">
+						</div>
+					</div>            
+					<!-- / slide item -->
+
+					<div class="slider_item" data-slide-title="Example name 2" style="background-image: url(slider_example_img/test_bg.jpg);">
+						<div class="slider_item__title">
+							<a href="" class="linkType1">Example name 2</a>
+						</div>
+						<div class="slider_item__text">Facere ut, sapiente error quas quae amet tempore itaque aspernatur ullam animi expedita eius, quod voluptate aut fuga sit consectetur explicabo.</div>
+						<div class="slider_item__priceContainer" data-price-new="20" data-price-old="120">
+							<span class="slider_item__price slider_item__price-new js_price"></span>
+							<span class="slider_item__price slider_item__price-old js_price"></span>
+						</div>
+
+						<div class="slider_item__img">
+							<img src="slider_example_img/test2.jpg">
+						</div>
+					</div>
+					<div class="slider_item" data-slide-title="Name example 3">
+						<div class="slider_item__title">
+							<a href="" class="linkType1">Name example 3</a>
+						</div>
+						<div class="slider_item__text">Description text. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+						<div class="slider_item__priceContainer" data-price-new="50" data-price-old="520">
+							<span class="slider_item__price slider_item__price-new js_price"></span>
+							<span class="slider_item__price slider_item__price-old js_price"></span>
+						</div>
+
+						<div class="slider_item__img">
+							<img src="slider_example_img/test1.jpg">
+						</div>
+					</div>
+					<div class="slider_item" data-slide-title="Example name 4">
+						<div class="slider_item__title">
+							<a href="" class="linkType1">Name example 4</a>
+						</div>
+						<div class="slider_item__text">consectetur adipisicing elit. Facere ut, sapiente error quas quae amet tempore itaque aspernatur ullam animi expedita eius, quod voluptate aut fuga.</div>
+						<div class="slider_item__priceContainer" data-price-new="1000" data-price-old="3000">
+							<span class="slider_item__price slider_item__price-new js_price"></span>
+							<span class="slider_item__price slider_item__price-old js_price"></span>
+						</div>
+
+						<div class="slider_item__img">
+							<img src="slider_example_img/test4.jpg">
+						</div>
+					</div>
+
+				</div>
+				<!-- / slider content -->
+			</div>
+
+			<!-- controls -->
+			<div class="slider_control_item left js_tooltipOwner">
+				<svg xmlns="http://www.w3.org/2000/svg" width="43" height="82" viewBox="0 0 43 82">
+					<path fill="none" fill-rule="evenodd" stroke="#000" stroke-width="2" d="M42 1L2 41.57 40.875 81"/>
+				</svg>
+				<span class="js_tooltip slider_control_tooltip"></span>
+			</div>
+			<div class="slider_control_item right js_tooltipOwner">
+				<svg xmlns="http://www.w3.org/2000/svg" width="43" height="82" viewBox="0 0 43 82">
+					<path fill="none" fill-rule="evenodd" stroke="#000" stroke-width="2" d="M42 1L2 41.57 40.875 81"/>
+				</svg>
+				<span class="js_tooltip slider_control_tooltip"></span>
+			</div>
+			<!-- / controls -->
+
+		</div>
+		<!-- / slider -->
+		<script>
+			$(document).ready(function () {
+				slider("#exampleSlider");
+			});
+		</script>
+
+	</div>
+
+	<script src="slider.js"></script>
+</body>
+
+</html>

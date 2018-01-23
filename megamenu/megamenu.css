@@ -71,6 +71,9 @@ body.menu_open:after {
 
 
 /*example content*/
+h1 {
+	margin-bottom: 30px;
+}
 .exampleMenu__list {
 	display: flex;
 	flex-direction: column;
